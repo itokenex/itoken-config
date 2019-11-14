@@ -7,7 +7,8 @@ spring:
     admin:
       client:
         url: http://localhost:8084
-  druid:
+  datasource:
+    druid:
       url: jdbc:mysql://106.75.12.119:3306/mybatis?useUnicode=true&characterEncoding=utf8
       username: root
       password: 123456
@@ -16,6 +17,7 @@ spring:
       max-active: 20
       test-on-borrow: true
       driver-class-name: com.mysql.cj.jdbc.Driver
+
 server:
   port: 9501
 
