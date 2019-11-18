@@ -1,6 +1,6 @@
 spring:
   application:
-    name: itoken-service-admin
+    name: itoken-service-sso
   zipkin:
     base-url: http://localhost:9411
   boot:
@@ -19,7 +19,11 @@ spring:
       driver-class-name: com.mysql.cj.jdbc.Driver
 
 server:
-  port: 9501
+  port: 9503
+
+feign:
+  hystrix:
+    enabled: true
 
 mybatis:
   type-aliases-package: com.funtl.itoken.common.domain
