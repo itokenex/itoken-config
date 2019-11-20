@@ -18,19 +18,8 @@ spring:
       test-on-borrow: true
       driver-class-name: com.mysql.cj.jdbc.Driver
 
-  redis:
-      lettuce:
-        pool:
-          max-active: 8
-          max-idle: 8
-          max-wait: -1ms
-          min-idle: 0
-      sentinel:
-        master: mymaster
-        nodes: 106.75.12.119:26379,106.75.12.119:26380,106.75.12.119:26381
-
 server:
-  port: 9501
+  port: 9504
 
 mybatis:
   type-aliases-package: com.funtl.itoken.common.domain

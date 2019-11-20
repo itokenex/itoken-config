@@ -1,0 +1,7 @@
+mybatis:
+  #开启二级缓存
+  configuration:
+    cache-enabled: true
+
+  type-aliases-package: com.funtl.itoken.common.domain
+  mapper-locations: classpath:mapper/*.xml
