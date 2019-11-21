@@ -19,7 +19,7 @@ spring:
 server:
   port: 9601
 
-
+host.addre: http://localhost:9601
 eureka:
   client:
     service-url:
