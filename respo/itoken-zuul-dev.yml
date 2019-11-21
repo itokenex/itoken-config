@@ -22,3 +22,13 @@ management:
     web:
       exposure:
         include: health, info
+
+#zuul路由功能
+zuul:
+  routes:
+    api-a:
+      path: /admin/**
+      serviceId: itoken-web-admin
+    api-b:
+      path: /posts/**
+      serviceId: itoken-web-posts
